@@ -18,12 +18,14 @@ const QueryResult = ({ loading, error, data, children }) => {
     );
   }
   if (!data) {
-    return <p>Nothing to show...</p>;
+    return <p>Sorry! Nothing to show...</p>;
   }
   if (data) {
     return children;
   }
 };
+
+
 
 export default QueryResult;
 
